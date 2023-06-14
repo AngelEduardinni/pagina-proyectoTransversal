@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/62cf508b2e.js" crossorigin="anonymous"></script>
+    <link rel="shorcut icon" type="image/x-icon" href="/img/img_logo.png">
+    <link rel="stylesheet" href="/styles/estilos.css">
+    <title>Proyecto Transversal</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><img src="/img/img_logo.png" width="80" height="80" alt=""></li>
+            <li><a href="index.html" data-text="Inicio">Inicio</a></li>
+            <li><a href="fisica.html" data-text="Física">Física</a></li>
+            <li><a href="calculo.html" data-text="Cálculo">Cálculo</a></li>
+        </ul>
+    </header>
+    <div class="mainContainer">
+        <div id="espacio"></div>
+        <div class="slider">
+            <div class="slides">
+            
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+                <input type="radio" name="radio-btn" id="radio6">
+        
+                <div class="slide first">
+                <img src="/img/slideshow-resources/fisica1.jpg" width="800" height="500" alt="">
+                </div>
+                <div class="slide">
+                <img src="/img/slideshow-resources/calculo1.jpg" width="800" height="500" alt="">
+                </div>
+                <div class="slide">
+                <img src="/img/slideshow-resources/html1.jpg" width="800" height="500" alt="">
+                </div>
+                <div class="slide">
+                <img src="/img/slideshow-resources/fisica2.jpg" width="800" height="500" alt="">
+                </div>
+                <div class="slide">
+                <img src="/img/slideshow-resources/calculo2.jpg" width="800" height="500" alt="">
+                </div>
+                <div class="slide">
+                <img src="/img/slideshow-resources/html2.jpg" width="800" height="500" alt="">
+                </div>
+        
+                <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+                <div class="auto-btn6"></div>
+                </div>
+        
+            </div>
+            <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+            <label for="radio6" class="manual-btn"></label>
+            </div>
+        </div>
+        <div id="espacio"></div>
+        <div class="mainInfo">
+            <img id="img1" src="/img/index/fisica.jpg" alt="">
+            <p id="info1">En la física podemos captar la idea de que es una aplicación de la ciencia
+                enfocada principalmente en como actúan las cosas, ya sea el movimiento de
+                una pelota, la velocidad de una bala, la fuerza con la que se jala una caja, entre
+                muchos más aspectos que pueden estudiarse gracias a la física, pero, como todo
+                tiene una explicación, en este caso, hablaremos sobre un tema especifico, que
+                se puede observar el movimiento de un objeto ya sea en una superficie plano o
+                pendiente, más concretamente: El Movimiento Rectilíneo.</p>
+            <p id="info2">El cálculo diferencial es una rama de la matemática que permite resolver 
+                diversos problemas donde el cambio de las variables se puede modelar en un continuo 
+                numérico para determinar, a partir de ello, la variación de estos elementos en un instante o intervalo específico.
+                Al aplicarlo, es posible determinar el momento en que se da una tendencia al 
+                alza o a la baja del mercado a partir de los datos del índice bursátil, determinar
+                la velocidad máxima que un vehículo puede alcanzar en una carretera, el 
+                comportamiento que puede mostrar a largo plazo la concentración de una mezcla o 
+                predecir el número de horas-hombre necesarias para un nivel de producción industrial.</p>
+            <img id="img2" src="/img/index/calculo.jpg" width="300" height="300" alt="">
+            <p id="info3">La programación web sirve para crear páginas y sitios en Internet. Para poder hacerlo, 
+                se utilizan distintos lenguajes específicos que permiten desarrollar la creatividad humana. 
+                Estos lenguajes se fundamentan en la posibilidad de enlazar a través de hipervínculos distintas 
+                páginas web, lo que genera la interconexión que conocemos hoy como Internet.
+                Gracias a la programación web en Internet, los servidores comenzaron a adaptarse a estas 
+                nuevas tecnologías y lenguajes y mejorar sus servicios. Esto ha permitido la generación de un 
+                diálogo online con los usuarios, de manera que estos puedan recibir la información más rápido y 
+                eficientemente. ¿Cómo se puede conseguir esto? Usando distintos lenguajes, los cuales pasamos a contarte a continuación.</p>
+            <img id="img3" src="/img/index/html.jpg" alt="">
+        </div>
+        
+        <script>
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 6){
+            counter = 1;
+            }
+        }, 8000);
+        </script>
+    </div>
+    <div id="espacio"></div>
+    <!--CARRUSEL DE IMAGENES -FIN- -->
+    <footer>
+        <div class="rojo">
+            <div class="izquierda">
+                Advertencia Legal <br>
+                Politica de Privacidad <br>
+                Politica de Cookies <br>
+                Politica de Calidad
+            </div>
+            <div class="redes">
+                <h2>Cafis</h2>
+                <div id="enlaces">
+                    <a class="enlaceFooter" href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a class="enlaceFooter" href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a class="enlaceFooter" href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a class="enlaceFooter" href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="derecha">
+                Empresa <br>
+                Contacto <br>
+                Blog <br>
+                FAQs
+            </div>
+        </div>
+        <div class="negro">Todos los derechos reservados. Angel Eduardo Romero Lopez 4to "A" PROGRAMACIÓN-VESPERTINO CBTis No 166° "Pablo Torres Burgos"</div>
+    </footer>
+</body>
+</html>
